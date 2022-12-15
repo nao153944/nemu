@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    
+    
+<head>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P27B3SF7PC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P27B3SF7PC');
+</script>    
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>nemu</title>
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> 
+</head>
+
+    
+<body>
+    
+    <div class="snslink">
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-twitter"></i>
+           <a href="https://twitter.com/NemuOtogi" target="_blank"><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-youtube"></i>
+           <a href="https://www.youtube.com/@NemuOtogi/featured" target="_blank"><i class="fab fa-youtube fa-stack-1x"></i></a>
+        </span>  
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/pichi/"><img src="pichi.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/tuku/"><img src="tuku.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/nono/"><img src="nono.png" width="65" height="65"></a>
+        </span>  
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/syuka/"><img src="syuka.png" width="65" height="65"></a>
+        </span> 
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-trash"></i>
+           <i class="far fa-trash-alt fa-stack-1x fa-inverse" onclick="ConfirmAlert()"></i>
+        </span> 
+        
+        <span class="fa-stack fa-2x fa-lg" onclick="scrolltop()">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <i class="fas fas fa-chevron-up fa-stack-1x fa-inverse"></i>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg" onclick="scrollunder()">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <i class="fas fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+        </span>
+        
+    </div>
+    
+    
+    <div class ="favorite">
+       <input type="checkbox" class="favorite-checkbox" id="favorite" onclick="FavoriteCheck()" >
+       <label class="c-text-favorite" for="favorite-checkbox">お気に入り</label>
+    </div>
+    
+    
+    <div class="form">
+      <input type="search" inputmode="search" class="select4" id="select4" placeholder="曲名を入力" onchange="SelectCheck()">
+    </div>
+    
+    
+    <div class ="select">
+       <label class="c-text-select">歌手名</label>
+       <select id="select3" class="select3" onchange="SelectCheck()">
+          <option value="none">選択なし</option>
+                  <option value="Orangestar">Orangestar</option>
+                  <option value="DECO*27×堀江晶太(kemu)">DECO*27×堀江晶太(kemu)</option>
+                <optgroup label=""></optgroup>
+       </select>
+  
+
+       <label class="c-text-select">配信日</label>
+       <select id="select1" class="select1" onchange="SelectCheck()">
+          <option value="none">選択なし</option>
+                  <option value="2022/11/05【歌ってみた】セカイ/ Re:Mixx【Re:AcT/リアクト】">2022/11/05【歌ってみた】セカイ/ Re:Mixx【Re:AcT/リアクト】</option>
+                  <option value="2022/11">2022/11</option>
+                  <option value="2022/08/12【初配信】初めまして🤍ずっと、あなたに会いたかった…💭【新人Vtuber/Re:AcT】">2022/08/12【初配信】初めまして🤍ずっと、あなたに会いたかった…💭【新人Vtuber/Re:AcT】</option>
+                  <option value="2022/08">2022/08</option>
+                <optgroup label=""></optgroup>
+       </select>
+    </div>
+
+    <div class ="radio">
+       <input class="r-button" type="radio" name="q1" value="デフォルト" onclick="RadioCheck()" checked>
+          <label class="r-text">デフォルト</label>
+       <input class="r-button" type="radio" name="q1" value="配信順" onclick="RadioCheck()">
+          <label class="r-text">配信順</label>
+    </div>
+
+
+<div class ="content" id="content">
+
+              <div id="c-1-1">
+           <input type="checkbox" class="checkbox" id="1-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nc-1-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=cAL3wZO0B5A\x26t=1494s')">
+              <c-text-title id="al-c-1-1" class="Orangestar">回る空うさぎ</c-text-title><br>
+              <c-text-youtube>2022/08/12【初配信】初めまして🤍ずっと、あなたに会いたかった…💭【新人Vtuber/Re:AcT】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-2-1">
+           <input type="checkbox" class="checkbox" id="2-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nc-2-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=H2B8_MdSQAw')">
+              <c-text-title id="al-c-2-1" class="DECO*27×堀江晶太(kemu)">セカイ</c-text-title><br>
+              <c-text-youtube>2022/11/05【歌ってみた】セカイ/ Re:Mixx【Re:AcT/リアクト】</c-text-youtube>
+           </button>
+        </div>
+
+      
+
+    </div>
+
+   <script type="text/javascript">
+       
+       
+var list = new Array(
+"1-1",
+"2-1",
+);
+
+
+
+
+
+var rh = new Array(
+"1-1",
+"2-1",
+);
+       
+       
+      var loadcontent;
+      var loadcheckbox;
+      var loadlist;
+       
+      window.onload = firstscript();
+      
+       
+       
+      function firstscript(){
+         var i=0;
+         while( i<list.length ){
+            loadlist = JSON.parse(localStorage.getItem('osave'+list[i]));
+            if(loadlist == "true"){
+               loadcheckbox = document.getElementById(list[i]);
+               loadcheckbox.checked = true;
+            }
+            i++;
+         }
+          
+         loadlist = JSON.parse(localStorage.getItem('osavefavorite'));
+         if(loadlist == "true"){
+            loadcheckbox = document.getElementById('favorite');
+            loadcheckbox.checked = true;
+            FavoriteOn();
+         }
+          
+         loadlist = JSON.parse(localStorage.getItem('osaveradio')); 
+         if(loadlist == "1"){
+            loadcheckbox = document.getElementsByName('q1');
+            loadcheckbox[1].checked = true;
+         } 
+         RadioCheck();
+      }
+       
+       
+       
+      function Save() {
+          var i = 0;
+          while( i<list.length ){
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  localStorage.setItem('osave'+list[i],JSON.stringify("true"));
+             }
+             else{
+                 loadlist = JSON.parse(localStorage.getItem('osave'+list[i]));
+                 if(loadlist == "true"){
+                    localStorage.removeItem('osave'+list[i]);
+                 }
+             }
+             i++;
+          }
+      }
+      
+      
+      function ConfirmAlert(){
+          var message = "保存データを削除しますか？";
+          if(confirm(message)){
+             Delete();
+          }
+      } 
+       
+      function Delete(){
+          var i = 0;
+          while( i<list.length ){
+             localStorage.removeItem('osave'+list[i]);
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  loadcheckbox.checked = false;
+             }
+             i++;
+          }
+          localStorage.removeItem('osavefavorite');
+          localStorage.removeItem('osaveradio');
+      } 
+       
+       
+      function FavoriteCheck() {
+         loadcheckbox = document.getElementById("favorite");
+         if(loadcheckbox.checked == true){
+            FavoriteOn(); 
+         }
+         else{
+            FavoriteOff();
+         }
+         SelectCheck();
+      } 
+    
+       
+      function FavoriteOn() {
+          var i = 0;
+          while( i<list.length ){
+             loadlist = JSON.parse(localStorage.getItem('osave'+list[i]));
+             if(loadlist == "true"){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             }
+             else{
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.add("c-active-none");
+             }
+             i++;
+          }
+          localStorage.setItem('osavefavorite',JSON.stringify("true"));
+      }
+       
+      function FavoriteOff() {
+          var i = 0;
+          while( i<list.length ){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             i++;
+          }
+          localStorage.removeItem('osavefavorite');
+      }
+        
+      
+      function SelectCheck() {
+         var select1check = document.getElementById("select1");
+         var select2check = document.getElementById("select4");
+         var select3check = document.getElementById("select3");
+         var i = 0;
+         while( i<list.length ){
+            loadcontent = document.getElementById("c-"+list[i]);
+            loadcontent.classList.remove("c-select-none");
+            loadcontent.classList.remove("c-select2-none");
+            loadcontent.classList.remove("c-select3-none");
+            i++;
+         }  
+         if(select1check.value != "none"){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("c-"+list[i]);
+               if(loadcontent.textContent.indexOf(select1check.value) == -1 ){
+                  loadcontent.classList.add("c-select-none");
+               }
+               i++;
+            }
+         }
+         if(select2check.value != "" || select2check.value != null){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("al-c-"+list[i]);
+               if(loadcontent.textContent.indexOf(select2check.value) == -1){
+                  loadcontent = document.getElementById("c-"+list[i]);
+                  loadcontent.classList.add("c-select2-none");       
+               }
+               i++
+            }
+         }
+         if(select3check.value != "none"){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("al-c-"+list[i]);
+               if(loadcontent.classList != select3check.value){
+                   loadcontent = document.getElementById("c-"+list[i]);
+                   loadcontent.classList.add("c-select3-none");
+               }
+               i++;
+            }
+         }
+      } 
+       
+       
+      
+      function RadioCheck(){
+         var radiocheck = document.getElementsByName('q1'); 
+         var i = 0;
+         while(i<radiocheck.length){
+            if(radiocheck[i].checked == true){
+               radiocheck = radiocheck[i].value;
+            }
+            i++;
+         }
+         var element = document.getElementById("content");
+
+         if(radiocheck == "デフォルト"){
+             var i=0;
+             while(i<list.length){
+                var elementload = document.getElementById("c-"+ list[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+             localStorage.removeItem('osaveradio');
+             
+         } 
+         else if(radiocheck == "配信順"){
+             var i=0;
+             while(i<rh.length){
+                var elementload = document.getElementById("c-"+ rh[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+             localStorage.setItem('osaveradio',JSON.stringify('1'));
+         }
+      }  
+       
+       
+       
+      function scrolltop(){
+         window.scroll({top: 0, behavior: 'smooth'});
+      };  
+       
+      function scrollunder(){
+         var element = document.documentElement;
+         var bottom = element.scrollHeight - element.clientHeight;
+         window.scrollTo({top: bottom, left: 0, behavior: 'smooth'});
+      };   
+       
+       
+       
+      function OpenWindow(url) {
+         window.open(url,"blank","width=800,height=720,left=900,top=100");
+      } 
+       
+       
+       
+       
+   </script>
+    
+
+
+    
+</body>
+    
+    
+    
+    
+    
+</html>
